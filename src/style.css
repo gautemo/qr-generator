@@ -12,16 +12,30 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html, body, #app {
+html, body {
   height: 100%;
   margin: 0;
 }
 
-#app {
+body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
 
 input {
   font-family: inherit;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
 }
