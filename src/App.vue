@@ -4,7 +4,7 @@ import { useQRCode } from '@vueuse/integrations/useQRCode'
 // @ts-ignore
 import { CreatedByMe } from 'gaute-web-components'
 
-const text = ref('text-to-encode')
+const text = ref('https://gaute.dev')
 const qrcode = useQRCode(text, {
   quality: 1,
   margin: 2,
